@@ -4,14 +4,12 @@
     public int NumeroPagine { get; private set; }
 
     //COSTRUTTORI
-    public Libro(string titolo, string anno, string autore, string isbn, int numeroPagine) : base(titolo, anno, autore)
+    public Libro(string titolo, string anno, string autore, string codice, int numeroPagine) : base(titolo, anno, autore, codice)
     {
-        this.Isbn = isbn;
         this.NumeroPagine = numeroPagine;
     }
-    public Libro(string titolo, string anno, string autore, string settore, int scaffale, string isbn, int numeroPagine) : base(titolo, anno, autore, settore, scaffale)
+    public Libro(string titolo, string anno, string autore, string settore, int scaffale, string codice, int numeroPagine) : base(titolo, anno, autore, codice, settore, scaffale)
     {
-        this.Isbn = isbn;
         this.NumeroPagine = numeroPagine;
     }
 }

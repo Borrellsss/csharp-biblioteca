@@ -1,17 +1,14 @@
 ﻿public class Dvd : Documento
 {
-    public string NumeroSeriale { get; private set; }
     public int Durata { get; private set; }
 
     //COSTRUTTORI
-    public Dvd(string titolo, string anno, string autore, string numeroSeriale, int durata) : base(titolo, anno, autore)
+    public Dvd(string titolo, string anno, string autore, string codice, int durata) : base(titolo, anno, autore, codice)
     {
-        this.NumeroSeriale = numeroSeriale;
         this.Durata = durata;
     }
-    public Dvd(string titolo, string anno, string autore, string settore, int scaffale, string numeroSeriale, int durata) : base(titolo, anno, autore, settore, scaffale)
+    public Dvd(string titolo, string anno, string autore, string settore, int scaffale, string codice, int durata) : base(titolo, anno, autore, codice, settore, scaffale)
     {
-        this.NumeroSeriale = numeroSeriale;
         this.Durata = durata;
     }
 }
